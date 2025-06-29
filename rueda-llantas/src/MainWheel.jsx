@@ -78,13 +78,14 @@ export default function MainWheel() {
   };
 
   const itemData = [
-    { title: "Piscina Termal", description: "Recorrido dentro de nuestro bosque privado?", imageUrl: "/rueda-llantas/021.jpg" },
-    { title: "Cascada Escondida", description: "Descubre la belleza natural", imageUrl: "/rueda-llantas/021.jpg" },
-    { title: "Rafting en Río", description: "Aventura y adrenalina", imageUrl: "/rueda-llantas/021.jpg" },
-    { title: "Paseo a Caballo", description: "Explora a caballo", imageUrl: "/rueda-llantas/021.jpg" },
-    { title: "Sendero de Monos", description: "Observa la vida silvestre", imageUrl: "/rueda-llantas/021.jpg" },
-    { title: "Tour de Café", description: "Conoce el proceso del café", imageUrl: "/rueda-llantas/021.jpg" },
-  ];
+  { title: "Piscina Termal", description: "Recorrido dentro de nuestro bosque privado?", imageUrl: "/021.jpg" },
+  { title: "Cascada Escondida", description: "Descubre la belleza natural", imageUrl: "/022.jpg" },
+  { title: "Rafting en Río", description: "Aventura y adrenalina", imageUrl: "/023.jpg" },
+  { title: "Paseo a Caballo", description: "Explora a caballo", imageUrl: "/021.jpg" },
+  { title: "Sendero de Monos", description: "Observa la vida silvestre", imageUrl: "/022.jpg" },
+  { title: "Tour de Café", description: "Conoce el proceso del café", imageUrl: "/023.jpg" },
+];
+
 
   return (
     <div className="full-page-layout" style={{ backgroundColor: 'black', color: 'black', minHeight: '130vh', fontFamily: "Comic Sans Ms" }}>
@@ -108,8 +109,7 @@ export default function MainWheel() {
             <div className="wheel-guide"></div>
 
             <img
-              src="/rueda-llantas/Llanta.png"
-              alt="Llanta principal"
+             src="/Llanta.png" alt="Llanta principal"
               className="main-wheel"
               style={{ transform: `rotate(${((rotation % 360) + 360) % 360}deg)` }}
               draggable={false}
