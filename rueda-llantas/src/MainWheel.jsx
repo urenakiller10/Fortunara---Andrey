@@ -91,11 +91,11 @@ export default function MainWheel() {
     <div className="full-page-layout" style={{ backgroundColor: 'black', color: 'black', minHeight: '130vh', fontFamily: "Comic Sans Ms" }}>
       <TopBar />
 
-      <div className="wheel-and-info">
-        <div className="info-box">
-          <h2>{itemData[activeIndex].title}</h2>
-          <p>{itemData[activeIndex].description}</p>
-        </div>
+<div className="wheel-and-info" style={{ display: 'flex', gap: '40px', alignItems: 'center', justifyContent: 'center' }}>
+  <div className="info-box" style={{ flex: '0 0 300px', paddingLeft: '20px' }}>
+    <h2>{itemData[activeIndex].title}</h2>
+    <p>{itemData[activeIndex].description}</p>
+  </div>
 
         <div className="wheel-section">
           <div
@@ -122,7 +122,7 @@ export default function MainWheel() {
               const diffToTop = Math.abs(normalizedAngle - 270);
               const isTop = diffToTop < 30;
               const scale = isTop ? 1.15 : 1;
-              const radius = 640 / 2 - 40;
+              const radius = 670 / 2 - 40;
               const rad = (totalAngle * Math.PI) / 180;
               const x = radius * scale * Math.cos(rad);
               const y = radius * scale * Math.sin(rad);
@@ -134,11 +134,11 @@ export default function MainWheel() {
                   className={`orbit-item-wrapper ${isTop ? 'highlight-top' : ''}`}
                   style={{
                     top: `calc(86% + ${y}px)`,
-                    left: isTop ? `calc(75% + ${x}px)` : `calc(86% + ${x}px)`,
+                    left: isTop ? `calc(73% + ${x}px)` : `calc(82% + ${x}px)`,
                     zIndex: z,
                     width: isTop ? '170px' : '140px',
                     height: isTop ? '190px' : '150px',
-                    transition: 'all 0.5s ease',
+                    transition: 'all 0.7s ease',
                     transform: 'none',
                   }}
                 >

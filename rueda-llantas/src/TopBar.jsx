@@ -17,7 +17,7 @@ export default function TopBar() {
     }}>
 
       {/* Título a la derecha */}
-      <div className="top-bar-left" style={{ display: 'flex', alignItems: 'center', marginLeft: '430px' }}>
+      <div className="top-bar-left" style={{ display: 'flex', alignItems: 'center', marginLeft: '250px' }}>
         <h1 className="logo-text" style={{ margin: 0, fontSize: '28px', fontFamily: 'fantasy', color: 'red' }}>
           SUPER QUADS
         </h1>
