@@ -68,6 +68,7 @@
 
 .info-box {
   background-color: white;
+  margin-top: -170px;
   color: black;
   padding: 20px 30px;
   border-radius: 20px;
@@ -77,6 +78,7 @@
   font-family: 'Arial', sans-serif;
   transition: all 0.3s ease;
   margin-right: 60px; 
+  
 }
 
 .info-box h2 {
