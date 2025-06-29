@@ -78,12 +78,12 @@ export default function MainWheel() {
   };
 
   const itemData = [
-    { title: "Piscina Termal", description: "Recorrido dentro de nuestro bosque privado?", imageUrl: "/021.jpg" },
-    { title: "Cascada Escondida", description: "Descubre la belleza natural", imageUrl: "/021.jpg" },
-    { title: "Rafting en Río", description: "Aventura y adrenalina", imageUrl: "/021.jpg" },
-    { title: "Paseo a Caballo", description: "Explora a caballo", imageUrl: "/021.jpg" },
-    { title: "Sendero de Monos", description: "Observa la vida silvestre", imageUrl: "/021.jpg" },
-    { title: "Tour de Café", description: "Conoce el proceso del café", imageUrl: "/021.jpg" },
+    { title: "Piscina Termal", description: "Recorrido dentro de nuestro bosque privado?", imageUrl: "/rueda-llantas/021.jpg" },
+    { title: "Cascada Escondida", description: "Descubre la belleza natural", imageUrl: "/rueda-llantas/021.jpg" },
+    { title: "Rafting en Río", description: "Aventura y adrenalina", imageUrl: "/rueda-llantas/021.jpg" },
+    { title: "Paseo a Caballo", description: "Explora a caballo", imageUrl: "/rueda-llantas/021.jpg" },
+    { title: "Sendero de Monos", description: "Observa la vida silvestre", imageUrl: "/rueda-llantas/021.jpg" },
+    { title: "Tour de Café", description: "Conoce el proceso del café", imageUrl: "/rueda-llantas/021.jpg" },
   ];
 
   return (
@@ -108,7 +108,7 @@ export default function MainWheel() {
             <div className="wheel-guide"></div>
 
             <img
-              src="/Llanta.png"
+              src="/rueda-llantas/Llanta.png"
               alt="Llanta principal"
               className="main-wheel"
               style={{ transform: `rotate(${((rotation % 360) + 360) % 360}deg)` }}
@@ -135,7 +135,6 @@ export default function MainWheel() {
                   style={{
                     top: `calc(86% + ${y}px)`,
                     left: isTop ? `calc(75% + ${x}px)` : `calc(86% + ${x}px)`,
-
                     zIndex: z,
                     width: isTop ? '170px' : '140px',
                     height: isTop ? '190px' : '150px',
